@@ -1,0 +1,30 @@
+h2 {
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    margin-left: 5vw;
+}
+
+h2 span {
+    color: #21E18C;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav {
+    background: #1A2634;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 75px;
+}
+
+.navCenter {
+    justify-self: center;
+}
+
+.navCenter input {
+    background-color: #24323F;
+}
