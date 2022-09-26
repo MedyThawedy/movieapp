@@ -27,7 +27,7 @@ const Navigation = () => {
     return (<>
         <nav>
             <div className='navLeft'>
-                <Link to="/"><h2> <span>.</span> Mov</h2> </Link>
+                <Link to="/"><h2 className='clsLogo'> <span>.</span> Mov</h2> </Link>
             </div>
             <div className='navCenter'>
                 {/*    <Link to="detailspage">Detailspage</Link> */}

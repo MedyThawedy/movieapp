@@ -5,7 +5,7 @@ import './footer.css';
 const Footer = () => {
     return (<>
         <footer>
-            <div className='divLeftSideFooter'><h2><span>.</span>Mov</h2><a href="">Imprint</a></div>
+            <div className='divLeftSideFooter'><h2 className='clsLogo'><span>.</span>Mov</h2><a href="">Imprint</a></div>
             <div className='divMiddleFooter'><img src={i} alt="" /> <img src={f} alt="" /></div>
             <div></div>
         </footer></>);

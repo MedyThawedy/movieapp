@@ -1,7 +1,8 @@
-h2 {
+.clsLogo {
     font-family: 'Anton', sans-serif;
     color: #fff;
     margin-left: 5vw;
+    font-size: 3rem;
 }
 
 h2 span {
