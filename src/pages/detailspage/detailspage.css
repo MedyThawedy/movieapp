@@ -17,9 +17,6 @@
     grid-template-columns: 1fr;
 }
 
-.clsTrailer{
-    height: 30vh;
-}
 
 .detailsArt2Left{
     font-family: 'Anton', sans-serif;
@@ -53,4 +50,19 @@ div > section > article.detailsArt2 > div > div div{
 
 div > section > article.detailsArt2 > div > div > div p{
     margin-left: 3.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .clsDetailsSection {
+       
+        grid-template-columns: 1fr;
+    }
+
+    div > section > article.detailArt1 > img{
+        width: 75%;
+    }
+
+    div > nav > div.navCenter{
+margin-bottom: 3vh;
+    }
 }

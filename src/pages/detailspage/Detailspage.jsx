@@ -51,35 +51,37 @@ const Detailspage = () => {
     genres = genres.slice(0, -1);
 
 
-    return (
-        <><h2 className='clsPopularMovies'>{movieDetail.original_title}</h2>
-            <section className='clsDetailsSection'>
-                
-                <article className='detailArt1'>
-                    <img src={(movieDetail.poster_path !== null )? ('https://image.tmdb.org/t/p/w500/' + movieDetail.poster_path) : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VdKRIadT_vpyzpsdJ4yeg30T1c6nGkJJtQ&usqp=CAU"} alt={movieDetail.original_title} />
-                </article>
-                <article className='detailsArt2'>
-                <div className='detailsArt2Top'>
-                    <div className='detailsArt2Left'>
-                     <div> <label>Release Date</label><p>{movieDetail.release_date}</p></div>
-                     <div> <label>Genres</label><p>{genres}</p></div>
-                     <div> <label>Overview</label><p>{movieDetail.overview}</p></div>
-                     <div><label>Overage voting</label> <p>{movieDetail.vote_average}</p></div>
-                    </div>
-    {/*
-                    <div className='detailsArt2Right'>
-                        <p>{movieDetail.release_date}</p>
-                        <p>{genres}</p>
-                        <p>{movieDetail.overview}</p>
-                        <p>{movieDetail.vote_average}</p>
-                    </div>
-    */}               
+    return <><h2 className='clsPopularMovies'>{movieDetail.original_title}</h2>
+        <section className='clsDetailsSection'>
+            
+            <article className='detailArt1'>
+                <img src={(movieDetail.poster_path !== null )? ('https://image.tmdb.org/t/p/w500/' + movieDetail.poster_path) : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VdKRIadT_vpyzpsdJ4yeg30T1c6nGkJJtQ&usqp=CAU"} alt={movieDetail.original_title} />
+            </article>
+            <article className='detailsArt2'>
+            <div className='detailsArt2Top'>
+                <div className='detailsArt2Left'>
+                 <div> <label>Release Date</label><p>{movieDetail.release_date}</p></div>
+                 <div> <label>Genres</label><p>{genres}</p></div>
+                 <div> <label>Overview</label><p>{movieDetail.overview}</p></div>
+                 <div><label>Overage voting</label> <p>{movieDetail.vote_average}</p></div>
                 </div>
-                    <h3 className='clsWatchTrailer'>Watch Trailer</h3>
-                    <iframe className='clsTrailer' src={'https://www.youtube.com/embed/' + varKey}></iframe>
-                </article>
-            </section></>
-    );
+{/*
+                <div className='detailsArt2Right'>
+                    <p>{movieDetail.release_date}</p>
+                    <p>{genres}</p>
+                    <p>{movieDetail.overview}</p>
+                    <p>{movieDetail.vote_average}</p>
+                </div>
+*/}               
+            </div>
+                <h3 className='clsWatchTrailer'>Watch Trailer</h3>
+                <iframe
+                    className='clsTrailer'
+                    src={'https://www.youtube.com/embed/' + varKey}
+                    width="540"
+                    height="280" title='trailer' allowFullScreen></iframe>
+            </article>
+        </section></>;
 }
 
 export default Detailspage;
