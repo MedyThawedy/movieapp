@@ -19,9 +19,10 @@ function App() {
           <Route path="/detailspage/:movieid" element={<Detailspage />} />
           <Route path="/searchresults/:moviename" element={<SearchResults />} />
           <Route path="*" element={<ErrorPage />} />
-        </Routes>
+        </Routes> 
+        <Footer></Footer>
       </BrowserRouter>
-      <Footer></Footer>
+     
     </div>
   );
 

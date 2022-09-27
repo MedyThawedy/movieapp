@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import './detailspage.css';
+
 
 const Detailspage = () => {
 
@@ -43,34 +45,38 @@ const Detailspage = () => {
     // Get genres
     console.log('6. movieTrailer.results?.[0] = ', varKey);
 
-    console.log('7. genres = ', movieDetail.genres?.[0].id);
+    //console.log('7. genres = ', movieDetail.genres?.[0].id);
     let genres = "";
     (movieDetail.genres?.map((item) => genres += item.name + ','))//?.slice(0, 4);
     genres = genres.slice(0, -1);
 
 
     return (
-        <>
-            <section>
-                <h2>{movieDetail.original_title}</h2>
+        <><h2 className='clsPopularMovies'>{movieDetail.original_title}</h2>
+            <section className='clsDetailsSection'>
+                
                 <article className='detailArt1'>
-                    <img src={'https://image.tmdb.org/t/p/w500/' + movieDetail.poster_path} alt={movieDetail.original_title} />
+                    <img src={(movieDetail.poster_path !== null )? ('https://image.tmdb.org/t/p/w500/' + movieDetail.poster_path) : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VdKRIadT_vpyzpsdJ4yeg30T1c6nGkJJtQ&usqp=CAU"} alt={movieDetail.original_title} />
                 </article>
-                <article className='detailArt2'>
-                    <div className='detailArt2Left'>
-                        <p>Release Date</p>
-                        <p>Genres</p>
-                        <p>Overview</p>
+                <article className='detailsArt2'>
+                <div className='detailsArt2Top'>
+                    <div className='detailsArt2Left'>
+                     <div> <label>Release Date</label><p>{movieDetail.release_date}</p></div>
+                     <div> <label>Genres</label><p>{genres}</p></div>
+                     <div> <label>Overview</label><p>{movieDetail.overview}</p></div>
+                     <div><label>Overage voting</label> <p>{movieDetail.vote_average}</p></div>
                     </div>
-                    <div className='detailArt2Right'>
+    {/*
+                    <div className='detailsArt2Right'>
                         <p>{movieDetail.release_date}</p>
                         <p>{genres}</p>
                         <p>{movieDetail.overview}</p>
                         <p>{movieDetail.vote_average}</p>
                     </div>
-                    <h3>Watch Trailer</h3>
-                    <iframe src={'https://www.youtube.com/embed/' + varKey}></iframe>
-
+    */}               
+                </div>
+                    <h3 className='clsWatchTrailer'>Watch Trailer</h3>
+                    <iframe className='clsTrailer' src={'https://www.youtube.com/embed/' + varKey}></iframe>
                 </article>
             </section></>
     );

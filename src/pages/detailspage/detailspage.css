@@ -1,0 +1,56 @@
+.clsDetailsSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    gap: 3.5vw;
+}
+
+.detailsArt2{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.detailsArt2Top{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.clsTrailer{
+    height: 30vh;
+}
+
+.detailsArt2Left{
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+
+ div > section > article.detailsArt2 > div > div > div label{
+    font-size: 1.4rem;
+ }
+
+ div > section > article.detailsArt2 > div > div > div p{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+ }
+
+.clsWatchTrailer{
+    font-size: 1.4rem;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+
+.detailsArt2Right{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+div > section > article.detailsArt2 > div > div div{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+div > section > article.detailsArt2 > div > div > div p{
+    margin-left: 3.5vw;
+}

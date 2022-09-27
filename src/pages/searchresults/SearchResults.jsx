@@ -28,22 +28,25 @@ const SearchResults = () => {
     };
 
     return (
-        <section>
+        <>
+         <h2 className="clsPopularMovies">Search Results</h2>
+        <section className="clsHome">
             {movies.results?.map(
                 (item) =>
                 (
-                    <Link key={item.id} to={`/detailspage/${item.id}`}>
-                        <article >
-                            <p>{item.vote_average}</p>
-                            <img src={"https://image.tmdb.org/t/p/w500/" + item.poster_path} alt={item.original_title} />
-                            <p>{item.release_date}</p>
-                            <p>{item.genre_ids}</p>
-                            <p>{item.original_title}</p>
+                    <Link className="clsMovie" key={item.id} to={`/detailspage/${item.id}`}>
+                        <article className="clsArticle">
+                            <p className="clsVoteAverage">{item.vote_average}</p>
+                            <img className="clsFilmImg" src={"https://image.tmdb.org/t/p/w500/" + item.poster_path} alt={item.original_title} />
+                            <p className="clsFontRoboto">{item.release_date}</p>
+                            <p className="clsFontAnton">{item.genre_ids}</p>
+                            <p className="clsFontAnton">{item.original_title}</p>
                         </article>
                     </Link>
                 )
             )}
         </section>
+        </>
     )
 }
 

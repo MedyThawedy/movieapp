@@ -3,7 +3,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background: #1A2634;
-    height: 75px;
+    height: 120px;
+    margin-top: 10vh;
 }
 
 footer a {

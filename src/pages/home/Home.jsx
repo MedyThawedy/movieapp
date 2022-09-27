@@ -27,14 +27,13 @@ const Home = () => {
             <section className="clsHome">
 
                 {movies.results?.map(
-                    (item) =>
-
+                    (item) => 
                     (
                         <Link className="clsMovie" key={item.id} to={`/detailspage/${item.id}`}>
-                            <article >
-                                <p>{item.vote_average}</p>
-                                <img className="clsFilmImg" src={"https://image.tmdb.org/t/p/w500/" + item.poster_path} alt={item.original_title} />
-                                <p className="clsFontRoboto">{item.release_date}{item.genre_ids}</p>
+                            <article className="clsArticle">
+                                <p className="clsVoteAverage">{item.vote_average}</p>
+                                <img className="clsFilmImg" src={(item.poster_path !== null) ? ('https://image.tmdb.org/t/p/w500/'+item.poster_path) : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VdKRIadT_vpyzpsdJ4yeg30T1c6nGkJJtQ&usqp=CAU"} alt={item.original_title} />
+                                <p className="clsFontRoboto">{(item.release_date).slice(0,4)}{/*item.genre_ids*/}</p>
                                 <p className="clsFontAnton">{item.original_title}</p>
                             </article>
                         </Link>
