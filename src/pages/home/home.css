@@ -6,6 +6,7 @@
     margin-right: auto;
     width: 90%;
     margin-top: 2vh;
+    min-height: 56vh;
 }
 
 .clsFilmImg {
@@ -43,7 +44,7 @@
     text-decoration: none;
 }
 
-.clsVoteAverage{
+.clsVoteAverage {
     background-color: #21E18C;
     color: #fff;
     border-radius: 50%;
@@ -58,7 +59,7 @@
     margin-right: 5px;
 }
 
-.clsArticle{
+.clsArticle {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -66,7 +67,7 @@
 
 @media only screen and (max-width: 600px) {
     .clsHome {
-       
+
         grid-template-columns: 1fr;
     }
 }
