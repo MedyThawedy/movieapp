@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 import sr from '../assets/img/search.png';
 import { useNavigate } from 'react-router-dom';
 import './navigation.css';
+import mi from '../assets/img/menu-icon.png';
+import { useEffect } from 'react';
 
 
 const Navigation = () => {
 
     const navigate = useNavigate();
     let urlString = '/searchresults/';
-    let strSearchName = "";
+   const[strSearchName, setStrSearchName] = useState('');
 
     const clickHandler = (event) => {
-        console.log("Hey! ");
-        strSearchName += document.getElementsByTagName('input')[0].value;
         if(strSearchName !== ''){
           navigate(urlString + strSearchName + '');
         console.log("Navi 1 ", strSearchName)  
@@ -24,11 +24,10 @@ const Navigation = () => {
         
     }
 
-    const onchangeHandler = () => {
-        strSearchName += document.getElementsByTagName('input')[0].value;
-        navigate(urlString + strSearchName + '');
-        console.log("Navi  2 ", strSearchName);
-    }
+    useEffect(
+        ()=>{ navigate(urlString + strSearchName + '');},
+        [strSearchName]
+    )
 
     return (<>
         <nav>
@@ -39,7 +38,7 @@ const Navigation = () => {
                 {/*    <Link to="detailspage">Detailspage</Link> */}
                 <div className='navCenterSearchDiv'>
                 <img src={sr} onClick={clickHandler} alt="Search"/>
-                <input type="text" onChange={onchangeHandler} />
+                <input type="text" onChange={(e)=>{setStrSearchName(e.target.value)}} />
                 </div>
             </div>
             <div className='navRight'></div>

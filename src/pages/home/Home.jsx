@@ -23,9 +23,8 @@ const Home = () => {
 
     return (
         <>
-            <h2 className="clsPopularMovies">Popular Movies</h2>
+           <h2 className="clsPopularMovies">Popular Movies</h2> 
             <section className="clsHome">
-
                 {movies.results?.map(
                     (item) => 
                     (
@@ -38,8 +37,6 @@ const Home = () => {
                             </article>
                         </Link>
                     )
-
-
                 )}
             </section>
         </>

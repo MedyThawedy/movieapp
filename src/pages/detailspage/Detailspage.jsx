@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './detailspage.css';
+import wsthnfp from '../../components/assets/img/sorrynoposter2.jpg';
 
 
 const Detailspage = () => {
@@ -55,7 +56,7 @@ const Detailspage = () => {
         <section className='clsDetailsSection'>
             
             <article className='detailArt1'>
-                <img src={(movieDetail.poster_path !== null )? ('https://image.tmdb.org/t/p/w500/' + movieDetail.poster_path) : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VdKRIadT_vpyzpsdJ4yeg30T1c6nGkJJtQ&usqp=CAU"} alt={movieDetail.original_title} />
+                <img src={(movieDetail.poster_path !== null )? ('https://image.tmdb.org/t/p/w500/' + movieDetail.poster_path) : wsthnfp } alt={movieDetail.original_title} style={!movieDetail.poster_path ? {maxHeight: '80vh'} : {backgroundColor: 'transparent'} }/>
             </article>
             <article className='detailsArt2'>
             <div className='detailsArt2Top'>
