@@ -66,3 +66,7 @@ div > section > article.detailsArt2 > div > div > div p{
 margin-bottom: 3vh;
     }
 }
+
+.clsTrailer:hover{
+    border: 1px solid #21E18C;
+}
