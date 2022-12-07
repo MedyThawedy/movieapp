@@ -1,8 +1,7 @@
-import datafile from "./../../components/data/data.js";
+
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
-import Navigation from "../../components/navigation/Navigation.jsx";
 import './home.css';
 
 const Home = () => {

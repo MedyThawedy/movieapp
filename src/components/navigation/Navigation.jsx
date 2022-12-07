@@ -25,7 +25,13 @@ const Navigation = () => {
     }
 
     useEffect(
-        ()=>{ navigate(urlString + strSearchName + '');},
+        ()=>{
+            if(strSearchName){
+             console.log('Jetzt! ')
+             navigate(urlString + strSearchName + '');
+            }
+        }
+        ,
         [strSearchName]
     )
 
@@ -37,7 +43,7 @@ const Navigation = () => {
             <div className='navCenter'>
                 {/*    <Link to="detailspage">Detailspage</Link> */}
                 <div className='navCenterSearchDiv'>
-                <img src={sr} onClick={clickHandler} alt="Search"/>
+              <img  src={sr} onClick={clickHandler} alt="Search"/>
                 <input type="text" onChange={(e)=>{setStrSearchName(e.target.value)}} />
                 </div>
             </div>

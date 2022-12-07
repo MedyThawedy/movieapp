@@ -16,15 +16,17 @@ const SearchResults = () => {
     //
     let urlToSearch;
 
-    if ( moviename.length == 0 || moviename==null || moviename=="") {
-        console.log('string is empty');
-        urlToSearch = `https://api.themoviedb.org/3/search/movie?api_key=3f5bf13c3624e5013d3c11da8421e497&query= `
-      } else {
-        console.log('string is NOT empty');
+    //if ( moviename.length == 0 || moviename==null || moviename=="") {
+      //  console.log('string is empty');
+      //  urlToSearch = `https://api.themoviedb.org/3/search/movie?api_key=3f5bf13c3624e5013d3c11da8421e497&query= `
+    //  } else {
+      //  console.log('string is NOT empty');
         urlToSearch = `https://api.themoviedb.org/3/search/movie?api_key=3f5bf13c3624e5013d3c11da8421e497&query=${moviename}`;
-      }
+     // }
 
     console.log('2. Die URL = ', urlToSearch)
+
+
 
     useEffect(() => {
         fetchSearchMovie();
