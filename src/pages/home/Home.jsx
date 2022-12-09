@@ -7,7 +7,7 @@ import './home.css';
 const Home = () => {
 
     const [movies, setMovies] = useState([]);
-    const url = 'https://api.themoviedb.org/3/movie/popular?api_key=3f5bf13c3624e5013d3c11da8421e497';
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=3f5bf13c3624e5013d3c11da8421e497`;
     // Get the popular movies
     useEffect(() => {
         fetchMovies();

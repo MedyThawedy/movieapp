@@ -14,7 +14,7 @@ const Detailspage = () => {
 
     // Api url https://api.themoviedb.org/3/movie/985939?api_key=3f5bf13c3624e5013d3c11da8421e497
     // https://blog.devgenius.io/fetch-data-from-a-real-api-react-js-f962da8af24a
-    const url = `https://api.themoviedb.org/3/movie/${movieid}?api_key=3f5bf13c3624e5013d3c11da8421e497`;
+    const url = `${process.env.REACT_APP_API_URL}/${movieid}?api_key=3f5bf13c3624e5013d3c11da8421e497`;
 
     useEffect(() => {
         fetchDetails();
