@@ -14,7 +14,7 @@ The technologies used for the creation of this app are:
 
 ## Link to the App
 
-here: [SilentMoon](https://p-movie-app.herokuapp.com/) – Go to Silent Moon!
+here: [Mov](https://p-movie-app.herokuapp.com/) – Go to Mov!
 
 
 ## Screenshots of the app
