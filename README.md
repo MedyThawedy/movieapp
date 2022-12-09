@@ -1,4 +1,4 @@
-# Silent Moon
+# Mov
 
 Mov is a responsive web application. The user can search for movies and find all the informations that he needs about movies. 
 
@@ -21,7 +21,7 @@ here: [SilentMoon](https://p-movie-app.herokuapp.com/) – Go to Silent Moon!
 
 <div align="center">
     <img src="./screenshots/mov1.jpg" width="300" />
-     <img src="./screenshots/mov2.png" width="300" />
+     <img src="./screenshots/mov2.jpg" width="300" />
     <br/> 
 </div>
 
