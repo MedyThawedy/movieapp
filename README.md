@@ -20,8 +20,8 @@ here: [SilentMoon](https://p-movie-app.herokuapp.com/) – Go to Silent Moon!
 ## Screenshots of the app
 
 <div align="center">
-    <img src="./screenshots/mov1.jpg" width="300" />
-     <img src="./screenshots/mov2.jpg" width="300" />
+    <img src="./screenshots/mov1.jpg" width="500" />
+     <img src="./screenshots/mov2.jpg" width="500" />
     <br/> 
 </div>
 
