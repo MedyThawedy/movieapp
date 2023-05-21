@@ -51,7 +51,7 @@ const SearchResults = () => {
                 (
                     <Link className="clsMovie" key={item.id} to={`/detailspage/${item.id}`}>
                         <article className="clsArticle">
-                            <p className="clsVoteAverage">{(item.vote_average).toFixed(1)}</p>
+                            <p className="clsVoteAverage">{((item.vote_average).toFixed(1)).substring(0, 3)}</p>
                             <img className="clsFilmImg" src={item.poster_path ? `https://image.tmdb.org/t/p/w500/${item.poster_path}` : wsthnfp} alt={item.original_title} />
                             <p className="clsFontRoboto">{item.release_date}</p>
                             <p className="clsFontAnton">{item.genre_ids}</p>

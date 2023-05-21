@@ -279,7 +279,7 @@ const Home = () => {
                     (
                         <Link className="clsMovie" key={item.id} to={`/detailspage/${item.id}`}>
                             <article className="clsArticle">
-                                <p className="clsVoteAverage">{(item.vote_average).toFixed(1)}</p>
+                                <p className="clsVoteAverage">{((item.vote_average).toFixed(1)).substring(0, 3)}</p>
                                 <img className="clsFilmImg" src={(item.poster_path !== null) ? ('https://image.tmdb.org/t/p/w500/'+item.poster_path) : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VdKRIadT_vpyzpsdJ4yeg30T1c6nGkJJtQ&usqp=CAU"} alt={item.original_title} />
                                 <p className="clsFontRoboto">{(item.release_date).slice(0,4)}{/*item.genre_ids*/}</p>
                                 <p className="clsFontAnton">{item.original_title}</p>
