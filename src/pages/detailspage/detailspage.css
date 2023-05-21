@@ -6,6 +6,10 @@
     gap: 3.5vw;
 }
 
+.detailArt1Image{
+    height: 100%;
+}
+
 .detailsArt2{
     display: flex;
     flex-direction: column;
@@ -69,4 +73,9 @@ margin-bottom: 3vh;
 
 .clsTrailer:hover{
     border: 1px solid #21E18C;
+}
+
+.clsTrailer{
+    height: 100%;
+    width: 100%;
 }

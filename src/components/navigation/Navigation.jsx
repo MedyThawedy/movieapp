@@ -35,10 +35,16 @@ const Navigation = () => {
         [strSearchName]
     )
 
+  
+        const handleRefresh = () => {
+            navigate("/");
+          window.location.reload();
+        };
+
     return (<>
         <nav>
             <div className='navLeft'>
-                <Link to="/"><h2 className='clsLogo'> <span>.</span> Mov</h2> </Link>
+                <Link to="/"><h2 className='clsLogo' onClick={handleRefresh}> <span>.</span> Mov</h2> </Link>
             </div>
             <div className='navCenter'>
                 {/*    <Link to="detailspage">Detailspage</Link> */}

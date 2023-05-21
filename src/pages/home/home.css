@@ -66,6 +66,115 @@
     position: relative;
 }
 
+.clsHomeHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.clsHomeHeaderRight{
+    margin-right: 5vw;
+}
+
+.clsHomeHeaderRight button{
+    border: 1px solid #21E18C;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 30px;
+    color: #21E18C;
+    background-color: #1A2634;
+    border-radius: 23px;
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+}
+
+.clsHomeHeaderRight button:hover{
+    background-color: #21E18C;
+    color: #fff;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .popup-content {
+    background-color: #24323F;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    border: 1px solid #21E18C;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .popup input[type="text"],
+  .popup input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #21E18C;
+  }
+  .popup input[type="text"]:focus,
+  .popup input[type="number"]:focus{
+   outline: 2px solid #21E18C; 
+  } 
+  
+
+  .popup-bottom-button{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup button {
+    padding: 10px 47px;
+    background-color: #21E18C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #21E18C;
+  }
+
+  .popup button:hover{
+    background-color: #1A2634;
+    color:#21E18C;
+    border: 1px solid #21E18C;
+  }
+
+  .btn-a-search-left{
+    padding-right: 15px;
+  }
+
+  .select-genre{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #21E18C;
+color:grey;
+  }
+
+  .select-genre:focus {
+    outline: 2px solid  #21E18C;
+  }
+  
+
 @media only screen and (max-width: 600px) {
     .clsHome {
 
